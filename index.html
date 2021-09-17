@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a3a93a2d3.js" crossorigin="anonymous"></script>
+    <base href="https://vanessatauchert.github.io/sistemasCadastro/">
+
+
+    <title>Formulario de Cadastro</title>
+
+</head>
+<body>
+    
+    <div id="form">
+
+        <form onsubmit="cadastro.cadastrar(event)">
+
+            <h2 class="title">Crie sua conta</h2>
+
+            <label for="nome">Nome</label>
+            <div class="input">
+                <i class="fas fa-user"></i>
+                <input id="nome" placeholder="Digite seu Nome Completo" type="text">
+            </div>
+
+            <label for="email">E-mail</label>
+            <div class="input">
+                <i class="fas fa-envelope"></i>
+                <input id="em" placeholder="Digite seu e-mail" type="email">
+            </div>
+
+            <label for="senha">Senha</label>
+            <div class="input">
+                <i class="fas fa-lock"></i>
+                <input id="senha" placeholder="Digite uma senha" type="password">
+            </div>
+
+            <div id="btn">
+                <button type="submit" id="btn1">Cadastrar</button>
+            </div>
+
+            <div id="btn">
+                <button onclick="cadastro.cancelar()">Limpar</button>
+            </div>
+
+        </form>
+
+
+    </div>
+
+    <div class="content">
+
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Senha</th>
+                    <th class="center">Ações</th>
+                </thead>
+
+                <tbody id="tbody">
+
+                </tbody>
+
+            </table>
+        </div>
+        
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
